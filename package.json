@@ -1,0 +1,45 @@
+{
+  "author": {
+    "name": "Braity – Kacper Obrzut",
+    "email": "kacper@braity.com",
+    "url": "https://braity.com"
+  },
+  "version": "1.0.0",
+  "name": "typescript-app-template",
+  "description": "Node.js App Template with TypeScript support",
+  "license": "UNLICENSED",
+  "main": "./dist/app.js",
+  "engines": {
+    "node": "18.4.0",
+    "npm": "8.12.1"
+  },
+  "scripts": {
+    "test": "jest --config .jestrc.json",
+    "start": "node -r \"./dist/common/resolver\" \"./dist/app.js\"",
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "lint:typescript": "eslint . --ext .ts",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "@types/supertest": "^2.0.12",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "husky": "^7.0.0",
+    "jest": "^28.1.2",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
