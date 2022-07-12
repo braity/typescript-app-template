@@ -14,7 +14,7 @@
     "npm": "8.12.1"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand --verbose",
     "start": "node -r \"./dist/common/resolver\" \"./dist/app.js\"",
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
