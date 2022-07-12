@@ -1,7 +1,6 @@
 import * as resolver from 'module';
 import * as path from 'path';
-
-const config = require('../../../tsconfig.json').compilerOptions;
+import { compilerOptions as config } from '../../../tsconfig.json';
 
 (function registerModuleResolver() {
   const moduleResolver: any = resolver;
