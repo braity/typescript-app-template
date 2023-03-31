@@ -1,3 +1,3 @@
 (function boostrap() {
-  console.log('Starting application...');
+  console.log('Hello world!');
 })();
